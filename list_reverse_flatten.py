@@ -1,14 +1,14 @@
 # Problem 1
-new_input = []
+output = []
 def flatten_func(input):
 
     for i in input:
         if type(i) == list or type(i) == set or type(i) == tuple or type(i) == dict:
             flatten_func(i)
         else:
-            new_input.append(i)
+            output.append(i)
 
-    return new_input
+    return output
 
 # Problem 2
 def reverse_func(input):
